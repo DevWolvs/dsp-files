@@ -13,10 +13,11 @@ public class LerArquivo {
         InputStreamReader isr = new InputStreamReader(inputStream);
         BufferedReader br = new BufferedReader(isr);
         
-        String line;
+        String line = br.readLine();
        
-        while((line = br.readLine()) != null) {
-            
+        while(line != null) {
+            System.out.println(line);
+            line = br.readLine();
         }
     }
 }
